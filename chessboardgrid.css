@@ -2,13 +2,13 @@ html {
     box-sizing: border-box;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: inherit;
-    
+
 }
 
 .board {
@@ -21,10 +21,10 @@ html {
 }
 
 .box1 {
-height: min(8vh, 8vw);
-width: min(8vh, 8vw);
-font-size: min(6vh, 6vw);
-text-align: center;
+    height: min(8vh, 8vw);
+    width: min(8vh, 8vw);
+    font-size: min(6vh, 6vw);
+    text-align: center;
 }
 
 .box2 {
@@ -32,9 +32,9 @@ text-align: center;
     width: min(8vh, 8vw);
     font-size: min(6vh, 6vw);
     text-align: center;
-    }
+}
 
-.board > div {
+.board>div {
     border: 1px solid black;
 }
 

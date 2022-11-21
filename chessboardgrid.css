@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0; 
+    box-sizing: inherit;
+    
+}
+
+.board {
+    width: min(64vh, 64vw);
+    height: min(64vh, 64vw);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.box1 {
+height: min(8vh, 8vw);
+width: min(8vh, 8vw);
+font-size: min(6vh, 6vw);
+text-align: center;
+}
+
+.box2 {
+    height: min(8vh, 8vw);
+    width: min(8vh, 8vw);
+    font-size: min(6vh, 6vw);
+    text-align: center;
+    }
+
+.board > div {
+    border: 1px solid black;
+}
+
+.box1:nth-child(odd) {
+    background-color: white;
+}
+
+.box1:nth-child(even) {
+    background-color: grey;
+}
+
+.box2:nth-child(odd) {
+    background-color: grey;
+}
+
+.box2:nth-child(even) {
+    background-color: white;
+}
